@@ -1,23 +1,32 @@
-const {  pageGiveClasses, pageLanding, pageStudy, saveClasses } = require('./pages')
-
+// Server
 const express = require('express')
 const server = express()
-const nunjucks = require('nunjucks')
 
+const  {
+    pageLanding,
+    pageStudy,
+    pageGiveClasses,
+    saveClasses
+} = require('./pages')
+
+
+// nunjucks config (template engine)
+const nunjucks = require('nunjucks')
 nunjucks.configure('src/views', {
     express: server,
     noCache: true,
 })
 
+// Server config
 server
-//dados do req.body
-.use(express.urlencoded({extended: true}))
+// get req.body data
+.use(express.urlencoded({ extended: true }))
+// static files congig (css, scripts, imagens)
 .use(express.static("public"))
-
-//urls
-.get("", pageLanding)
+// app urls
+.get("/", pageLanding)
 .get("/study", pageStudy)
 .get("/give-classes", pageGiveClasses)
 .post("/save-classes", saveClasses)
-
+// server start
 .listen(5500)

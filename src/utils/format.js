@@ -1,34 +1,34 @@
 const subjects = [
     "Artes",
     "Biologia",
-    "Matematica",
-    "Ingles",
-    "Quimica",
-    "Artes",
-    "Artes",
-    "Artes",
-    "Artes",
-    "Artes"
+    "Ciências",
+    "Educação física",
+    "Física",
+    "Geografia",
+    "História",
+    "Matemática",
+    "Português",
+    "Quí-mica",
 ]
 
 const weekdays = [
     "Domingo",
-    "Segunda",
-    "Terça",
-    "Quarta",
-    "Quinta",
-    "Sexta",
-    "Sabado",
+    "Segunda-feira",
+    "Terça-feira",
+    "Quarta-feira",
+    "Quinta-feira",
+    "Sexta-feira",
+    "Sábado",
 ]
 
-function getSubject(subjectNumber){
-    const arrayPosition = +subjectNumber -1
-    return subjects[arrayPosition]
+function getSubject(subjectNumber) {
+    const position = +subjectNumber - 1
+    return subjects[position]
 }
 
-function convertHoursToMinutes(time){
-    const [hours, minutes] = time.split(":")
-    return Number((hours * 60) + minutes)
+function convertHoursToMinutes(time) {
+    const [hour, minutes]  = time.split(":")
+    return Number((hour * 60) + minutes)
 }
 
 module.exports = {

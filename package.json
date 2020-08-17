@@ -1,5 +1,5 @@
 {
-  "name": "NLW",
+  "name": "nlw",
   "scripts": {
     "dev": "nodemon src/server.js"
   },
