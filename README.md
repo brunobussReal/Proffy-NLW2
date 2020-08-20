@@ -31,4 +31,4 @@ Project layout can be checked on [Figma](https://www.figma.com/file/GHGS126t7WYj
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Comunidade Rockeseat :wave: [Participe da nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
